@@ -24,10 +24,14 @@ export default function Mynavbar() {
             2024[Jan-Dec]
           </div>
           <div className="msg">
+    <a href ="#">
             <i className="fa-regular fa-envelope"></i>
+        </a>
           </div>
           <div className="bell">
+    <a href ="#">
             <i className="fa-regular fa-bell"></i>
+    </a>
           </div>
           <div className="imag">
             <img
