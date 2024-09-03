@@ -1,0 +1,162 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: rgb(244, 244, 31);
+        }
+        .wrapper{
+            background-color: white;
+            width:450px;
+            height: 10%;
+            border-radius: 10px;
+        }
+        .wrapper header{
+            display: flex;
+            align-items: center;
+            padding: 250px 30px 10px;
+            justify-content: space-between;
+    
+        }
+         header .current-date{
+            font-size: 1.9rem;
+            font-weight: 500;
+            position: absolute;
+            top: 110px;
+    
+        }
+        .calendar{
+            padding: 20px;
+        }
+        .calendar ul{
+             display: flex;
+             list-style: none;
+             flex-wrap: wrap;
+    
+        }
+        .days li{
+            margin-bottom: 20px;
+        }
+        .calendar .weeks li{
+            font-weight: 900;
+        }
+        .calendar .days li{
+            margin-top: 50px;
+            cursor: pointer;
+            z-index: -1;
+           
+        }
+        .icons{
+            position: absolute;
+            top: 195px;
+            height:38px;
+            width: 48px;
+            background-color: rgb(93, 96, 96);
+            line-height: 2rem;
+            cursor: pointer;
+        }
+        .calendar ul li{
+            width: calc(100%/7);
+        }
+        .calendar .days li::before{
+             position: absolute;
+             content: "";
+             height: 40px;
+             width: 40px;
+             top:50%;
+             left:50%;
+             z-index: -1;
+             border-radius:50% ;
+             transform: translate(-50%,-50%);
+        }
+        .days li:hover::before{
+            background: wheat;
+        }
+         .days li .inactive{
+            color: brown;
+            color: blueviolet;
+            background-color: aqua;
+        }
+    </style>
+    <body>
+          
+           
+    <div class="wrapper">
+        <header>
+           <p class="current-date">September 2022 </p>
+           <div class="icons">
+            <i class="fa-solid fa-chevron-left"></i>
+            <i class="fa-solid fa-chevron-right"></i>
+    
+           </div>
+    
+        </header>
+          <div class="calendar">
+            <ul class="weeks">
+              <li> Sun</li>
+              <li> Mon</li>
+              <li> Tues</li>
+              <li> Wed</li>
+              <li> Thurs</li>
+              <li> Fri</li>
+              <li> Sat</li>
+    
+    
+            </ul>
+        <ul class="'days">
+            <li class="inactive"> 1</li>
+            <li> 2</li>
+            <li> 3</li>
+            <li> 4</li>
+            <li> 5</li>
+            <li> 6</li>
+            <li> 7</li>
+            <li> 8</li>
+            <li> 9</li>
+            <li> 9</li>
+            <li> 10</li>
+            <li> 11</li>
+            <li> 12</li>
+            <li> 13</li>
+            
+            <li> 14</li>
+            <li> 15</li>
+            <li> 16</li>
+            <li> 17</li>
+            <li> 18</li>
+            <li> 20</li>
+            <li> 21</li>
+            <li> 22</li>
+            <li> 23</li>
+            <li> 24</li>
+            <li> 25</li>
+            
+            <li>26</li>
+            <li> 27</li>
+            <li> 28</li>
+            <li> 29</li>
+           
+            <li> 30</li>
+            <li> 31</li>
+          
+            
+            
+    
+    
+        </ul>
+    
+    
+          </div>
+    </div>
+    </body>
+    </html>
+    
